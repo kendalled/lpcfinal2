@@ -3558,7 +3558,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		background-attachment: fixed, fixed;
-		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../../images/headerTop.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../../images/headerTop.jpg");
 		background-position: center, center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
