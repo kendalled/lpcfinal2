@@ -4191,7 +4191,7 @@ input, select, textarea {
 		padding-top: 14.75rem;
 		padding: 8rem 0 6rem 0 ;
 		background-attachment: fixed, fixed;
-		background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.3), rgba(58, 58, 58, 0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.1), rgba(58, 58, 58, 0.5)), url("../../images/headerTop.jpg");
 		background-position: center, center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
