@@ -38,6 +38,17 @@ ol, ul {
 }
 
 /*Kendall*/
+.kendallPic {
+	max-width: 20em;
+	height: auto;
+}
+
+.kendallPic2 {
+	max-width: 18em;
+	height: auto;
+	padding-left: 1em;
+}
+
 #bannerLogo {
   background-color: #ffffff;
   border-radius: 6px;
@@ -87,7 +98,7 @@ ol, ul {
 	border-bottom: none;
 }
 .buttony span{
-	color: #000;
+	color: #fff;
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
@@ -98,6 +109,9 @@ ol, ul {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+.alternateColor2 span{
+	color: #111;
 }
 .buttony:before{
 	content: '';
@@ -150,7 +164,7 @@ ol, ul {
 
 /* Blue Coloring */
 .buttony{
-  background:#00BCD4;
+  background:#002d5d;
 }
 .buttony:before{
   background:#0097A7;
@@ -3258,7 +3272,8 @@ input, select, textarea {
 				border-radius: 100%;
 				box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.25);
 				margin: 0 6rem 0 0;
-				width: 30rem;
+				 max-width: 20em;
+				height: auto;
 			}
 
 				.spotlights section .image img {
