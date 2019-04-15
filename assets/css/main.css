@@ -37,6 +37,161 @@ ol, ul {
 	list-style: none;
 }
 
+/*Kendall*/
+#bannerLogo {
+  background-color: #ffffff;
+  border-radius: 6px;
+  max-width: 50em;
+  height: auto;
+  padding: 2em 1.5em 1em 1.5em;
+  margin: 0 auto;
+	margin-bottom: 2em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.bannerImg {
+	width: 20em;
+	height: auto;
+	padding-bottom: 1em;
+}
+/* BUTTONS */
+/* Set Transition Speeds */
+.buttony{
+	transition: .4s all ease-in-out;
+}
+.buttony span, .buttony:before{
+	transition: .8s all ease-in-out;
+}
+.buttony:after{
+	transition: .2s all ease-out;
+}
+
+/* buttony Font Declarations */
+.buttony span,.buttony:after{
+	font-family: inherit;
+  font-weight: bold;
+	font-size: 1rem;
+}
+
+/* Base buttony Styles */
+.buttony{
+	border-radius: 15px;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+	margin: 0px auto 0;
+	overflow: hidden;
+	padding: 0.5em 1em .5em 1em;
+	position: relative;
+	z-index: 1;
+	border-bottom: none;
+}
+.buttony span{
+	color: #000;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 10;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.buttony:before{
+	content: '';
+	height: 100%;
+	left: -7px;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	transform: skewX(-25deg);
+	width: 15px;
+	z-index: -1;
+}
+.buttony:after{
+	color: #fff;
+	content: '>';
+	display: inline-block;
+	margin-left: -9px;
+	opacity: 0;
+	position: relative;
+}
+
+/* Hover Transitions */
+.buttony:hover{
+	color: #fff;
+  /* Optional Box Shadow */
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+}
+.buttony:hover span{
+	color: #fff;
+}
+.buttony:hover:before{
+	width: 70%;
+	opacity: 1;
+}
+.buttony:hover:after{
+	opacity: 1;
+	margin-left: 5px;
+}
+
+/* Active Transitions */
+.buttony:active:before{
+	width: 3000%;
+}
+
+/* Full Width Variant */
+.buttony.fullWidth:hover:before{
+	width: calc(100% + 15px);
+	opacity: 1;
+}
+
+/* Blue Coloring */
+.buttony{
+  background:#00BCD4;
+}
+.buttony:before{
+  background:#0097A7;
+}
+.buttony:hover{
+  background:#00ACC1;
+}
+.buttony:hover:before{
+  background:#00838F;
+}
+
+/* Orange Coloring */
+.buttony.alternateColor1{
+  background:#ff9e17;
+}
+.buttony.alternateColor1:before{
+  background:#F57C00;
+}
+.buttony.alternateColor1:hover{
+  background:#FB8C00;
+}
+.buttony.alternateColor1:hover:before{
+  background:#EF6C00;
+}
+
+/* Orange Coloring */
+.buttony.alternateColor2{
+  background:#BDBDBD;
+}
+.buttony.alternateColor2:before{
+  background:#424242;
+}
+.buttony.alternateColor2:hover{
+  background:#9E9E9E;
+}
+.buttony.alternateColor2:hover:before{
+  background:#002d5d;
+}
+
+/*BUTTONS*/
+/* End Kendall */
 blockquote, q {
 	quotes: none;
 }
@@ -1921,8 +2076,8 @@ input, select, textarea {
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
-		text-transform: uppercase;
-		font-size: 0.9rem;
+		text-transform: none;
+		font-size: 1.1rem;
 		border-radius: 3.5rem;
 	}
 
@@ -3388,7 +3543,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		background-attachment: fixed, fixed;
-		background-image: linear-gradient(90deg, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url("../../images/banner.jpg");
+		background-image: linear-gradient(rgba(58, 58, 58, 0.3), rgba(58, 58, 58, 0.7)), url("../../images/headerTop.jpg");
 		background-position: center, center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -3671,9 +3826,9 @@ input, select, textarea {
 
 	#header {
 		background-color: #3a3a3a;
-		color: #ffffff;
-		background-color: #f54a6f;
-		background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #debf55 90%);
+		color: #000;
+		background-color: #fff;
+		background-image: url("../../images/overlay.png");
 		background-size: auto, auto;
 		background-repeat: repeat, no-repeat;
 		-moz-align-items: center;
@@ -3704,7 +3859,13 @@ input, select, textarea {
 		}
 
 		#header a {
-			color: #ffffff;
+			color: #000;
+			font-weight: bold;
+		}
+
+		#header a:hover {
+			transition: all .2s;
+			color: #ff9e18;
 		}
 
 		#header strong, #header b {
@@ -3742,8 +3903,9 @@ input, select, textarea {
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
 			border: 0;
-			font-size: 0.9rem;
-			text-transform: uppercase;
+			margin-top: 1.2em;
+			max-width: 17em;
+			height: auto;
 			white-space: nowrap;
 		}
 
@@ -3769,7 +3931,7 @@ input, select, textarea {
 
 			#header.alt:before {
 				background-color: #f54a6f;
-				background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #debf55 90%);
+				background-image: url("../../images/overlay.png"), linear-gradient(180deg, rgba(245, 74, 111, 0), #debf55 190%);
 				background-size: auto, auto;
 				background-repeat: repeat, no-repeat;
 				content: '';
@@ -3802,6 +3964,7 @@ input, select, textarea {
 			right: 0;
 			text-transform: uppercase;
 			top: 0;
+
 		}
 
 			#header > .navPanelToggle:before {
@@ -3909,7 +4072,7 @@ input, select, textarea {
 					box-shadow: 0;
 					font-size: 0.9rem;
 					padding: 0.625rem 1.5rem;
-					text-transform: uppercase;
+					text-transform: none;
 					box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0);
 				}
 
@@ -4013,7 +4176,7 @@ input, select, textarea {
 		padding-top: 14.75rem;
 		padding: 8rem 0 6rem 0 ;
 		background-attachment: fixed, fixed;
-		background-image: linear-gradient(90deg, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to bottom, rgba(58, 58, 58, 0.3), rgba(58, 58, 58, 0.5)), url("../../images/banner.jpg");
 		background-position: center, center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
