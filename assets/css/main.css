@@ -143,7 +143,7 @@ ol, ul {
 /* buttony Font Declarations */
 .buttony span,.buttony:after{
 	font-family: inherit;
-  font-weight: bold;
+  font-weight: normal;
 	font-size: 1rem;
 }
 
@@ -3943,7 +3943,7 @@ input, select, textarea {
 
 		#header a {
 			color: #000;
-			font-weight: bold;
+			font-weight: 500;
 		}
 
 		#header a:hover {
