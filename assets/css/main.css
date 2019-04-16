@@ -605,7 +605,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #f54a6f;
+		color: #002d5d;
 	}
 
 	strong, b {
@@ -630,8 +630,8 @@ input, select, textarea {
 	}
 
 	header.major h1:after, header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
-		background-color: #f54a6f;
-		background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #debf55 90%);
+		background-color: #002d5d;
+		background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #ff9e18 90%);
 		background-size: auto, auto;
 		background-repeat: repeat, no-repeat;
 	}
@@ -2111,6 +2111,8 @@ input, select, textarea {
 		border-radius: 6px;
 		margin-bottom: 2rem;
 		padding: 1.5rem;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
 	}
 
 		.box > :last-child {
@@ -2124,7 +2126,7 @@ input, select, textarea {
 		}
 
 	.box {
-		border-color: rgba(0, 0, 0, 0.125);
+		border-color: rgb(255, 158, 23);
 	}
 
 /* Button */
@@ -2232,8 +2234,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #f54a6f;
-			color: #f54a6f !important;
+			box-shadow: inset 0 0 0 1px #002d5d;
+			color: #002d5d !important;
 		}
 
 			input[type="submit"]:hover:active,
@@ -2249,8 +2251,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #f54a6f;
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #debf55 80%);
+			background-color: #002d5d;
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
 			background-size: auto, auto;
 			background-repeat: repeat, no-repeat;
 			box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
@@ -2454,8 +2456,8 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #f54a6f;
-			box-shadow: 0 0 0 1px #f54a6f;
+			border-color: #002d5d;
+			box-shadow: 0 0 0 1px #002d5d;
 		}
 
 	select {
@@ -2479,18 +2481,18 @@ input, select, textarea {
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #f54a6f;
-		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #debf55 80%);
+		background-color: #002d5d;
+		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
 		background-size: auto, auto;
 		background-repeat: repeat, no-repeat;
-		border-color: #f54a6f;
+		border-color: #002d5d;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #f54a6f;
-		box-shadow: 0 0 0 1px #f54a6f;
+		border-color: #002d5d;
+		box-shadow: 0 0 0 1px #002d5d;
 	}
 
 	::-webkit-input-placeholder {
@@ -2985,8 +2987,8 @@ input, select, textarea {
 		.wrapper.style2 {
 			background-color: #3a3a3a;
 			color: #ffffff;
-			background-color: #f54a6f;
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #debf55 80%);
+			background-color: #002d5d;
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
 			background-size: auto, auto;
 			background-repeat: repeat, no-repeat;
 		}
@@ -3059,8 +3061,8 @@ input, select, textarea {
 				.wrapper.style2 input[type="button"].primary,
 				.wrapper.style2 button.primary,
 				.wrapper.style2 .button.primary {
-					background-color: #f54a6f;
-					background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #debf55 80%);
+					background-color: #002d5d;
+					background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
 					background-size: auto, auto;
 					background-repeat: repeat, no-repeat;
 					box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
@@ -3133,7 +3135,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #f54a6f;
+				color: #002d5d;
 			}
 
 			.wrapper.style2 input[type="checkbox"]:focus + label:before,
@@ -3666,8 +3668,8 @@ input, select, textarea {
 			#banner input[type="button"].primary,
 			#banner button.primary,
 			#banner .button.primary {
-				background-color: #f54a6f;
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #debf55 80%);
+				background-color: #002d5d;
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
 				background-size: auto, auto;
 				background-repeat: repeat, no-repeat;
 				box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
@@ -4013,8 +4015,8 @@ input, select, textarea {
 		}
 
 			#header.alt:before {
-				background-color: #f54a6f;
-				background-image: url("../../images/overlay.png"), linear-gradient(180deg, rgba(245, 74, 111, 0), #debf55 190%);
+				background-color: #002d5d;
+				background-image: url("../../images/overlay.png"), linear-gradient(180deg, rgba(245, 74, 111, 0), #ff9e18 190%);
 				background-size: auto, auto;
 				background-repeat: repeat, no-repeat;
 				content: '';
@@ -4216,7 +4218,7 @@ input, select, textarea {
 				}
 
 				.dropotron li.active > a {
-					color: #f54a6f;
+					color: #002d5d;
 				}
 
 			.dropotron a {
@@ -4228,7 +4230,7 @@ input, select, textarea {
 			}
 
 				.dropotron a:active, .dropotron a:hover, .dropotron a:focus {
-					color: #f54a6f;
+					color: #002d5d;
 				}
 
 			body.header-alt .dropotron.level-0 {
@@ -4385,8 +4387,8 @@ input, select, textarea {
 	}
 
 	#navPanel {
-		background-color: #f54a6f;
-		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #debf55 80%);
+		background-color: #002d5d;
+		background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
 		background-size: auto, auto;
 		background-repeat: repeat, no-repeat;
 		-moz-transform: translateX(20rem);
