@@ -1,10 +1,12 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,200i,400,400i");
 
 /*
 	Lapel Pins & Coins - 2
 	Kendall Jackson
 */
+@font-face {
+  font-display: swap;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -22,7 +24,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+font-family: 'Roboto', sans-serif;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -37,7 +40,59 @@ ol, ul {
 }
 
 /*Kendall*/
-
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
 .spotlights section {
 	margin-bottom: 5em;
 }
@@ -47,9 +102,9 @@ ol, ul {
 }
 
 .kendallPic2 {
-	max-width: 18em;
+	max-width: 16em;
 	height: auto;
-	padding-left: 1em;
+	margin: 0 3.5rem 2rem 2.5rem;
 }
 
 #bannerLogo {
@@ -60,7 +115,8 @@ ol, ul {
   padding: 2em 1.5em 1em 1.5em;
   margin: 0 auto;
 	margin-bottom: 2em;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 1px 2px rgba(0, 0, 0, 0.28);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
 }
 
 .bannerImg {
@@ -68,23 +124,24 @@ ol, ul {
 	height: auto;
 	padding-bottom: 1em;
 }
+
 /* BUTTONS */
 /* Set Transition Speeds */
 .buttony{
 	transition: .4s all ease-in-out;
 }
 .buttony span, .buttony:before{
-	transition: .5s all ease-in-out;
+	transition: .4s all ease-in-out;
 }
 .buttony:after{
-	transition: .2s all ease-out;
+	transition: .4s all ease-out;
 }
 
 /* buttony Font Declarations */
 .buttony span,.buttony:after{
 	font-family: inherit;
   font-weight: bold;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 /* Base buttony Styles */
@@ -2480,9 +2537,11 @@ input, select, textarea {
 				border: solid 2px;
 				display: inline-block;
 				text-align: center;
-				width: 4.5rem;
-				height: 4.5rem;
-				line-height: 4.5rem;
+				width: 4rem;
+				height: 4rem;
+				line-height: 4rem;
+				background-color: #002d5d;
+				color: #fff;
 			}
 
 		.icon.major {
@@ -2526,7 +2585,8 @@ input, select, textarea {
 	}
 
 	a.icon.alt:hover:before {
-		background-color: rgba(0, 0, 0, 0.05);
+		background-color: transparent;
+		color: #002d5d;
 	}
 
 	a.icon.alt:active:before {
@@ -2787,6 +2847,7 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 1rem 0 0;
+
 		}
 
 			ul.icons li:last-child {
@@ -2795,6 +2856,7 @@ input, select, textarea {
 
 			ul.icons li .icon.alt {
 				margin: 0 0.375rem;
+
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3576,7 +3638,7 @@ input, select, textarea {
 		#banner button,
 		#banner .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 1px #002d5d;
+			box-shadow: inset 0 0 0 2px #002d5d;
 			color: #002d5d !important;
 		}
 
@@ -4243,11 +4305,11 @@ input, select, textarea {
 		}
 
 		#footer a.icon.alt:hover:before {
-			background-color: rgba(255, 255, 255, 0.05);
+			background-color: #002d5d;
 		}
 
 		#footer a.icon.alt:active:before {
-			background-color: rgba(255, 255, 255, 0.175);
+			background-color: #002d5d;
 		}
 
 		#footer:before {
