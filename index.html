@@ -187,7 +187,7 @@
 					</div>
 					<br/>
 					<a href="quote.html" title="Links to quote form." class="buttony fullWidth alternateColor2 scrolly"><span>Free Quote</span></a>
-					
+
 				</div>
 
 				<!-- Testimonials
@@ -245,13 +245,14 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
-	<script>
+	<script async>
 		$(function() {
 			$('#button').click(function() {
 				if (!$('#iframe').length) {
 					$('#iframeHolder').html('<iframe title="About Video" width="640" height="360" src="https://www.youtube.com/embed/GwDGLVv2WB4" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>');
 					// Makes #vidCard Visible, display:none by default
 					document.getElementById('vidCard').style.display = "block";
+					document.getElementById('button').style.display = "none";
 				}
 			});
 		});
