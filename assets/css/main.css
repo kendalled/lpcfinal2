@@ -2112,7 +2112,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		border: solid 1.5px;
+		border: solid 2px;
 		border-radius: 6px;
 		margin-bottom: 2rem;
 		padding: 1.5rem;
@@ -2131,7 +2131,7 @@ input, select, textarea {
 		}
 
 	.box {
-		border-color: rgb(255, 158, 23);
+		border-color: #002d5d;
 	}
 
 /* Button */
@@ -2992,7 +2992,6 @@ input, select, textarea {
 		.wrapper.style2 {
 			background-color: #3a3a3a;
 			color: #ffffff;
-			background-color: #002d5d;
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
 			background-size: auto, auto;
 			background-repeat: repeat, no-repeat;
