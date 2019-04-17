@@ -57,7 +57,7 @@ ol, ul {
   max-width: 100%;
 
   margin-left: 3%;
-  padding: 1em;
+  padding: 1.5em;
   display: none;
 }
 /* I achieved responsive design by losing the height attribute above */
