@@ -55,49 +55,12 @@ ol, ul {
   margin: 0 auto;
   text-align: center;
   max-width: 100%;
-  height: 25em;
+
   margin-left: 3%;
   padding: 1em;
   display: none;
 }
-@media screen and (min-width: 335px){
-  .vidCard{
-    height: 18em;
-  }
-}
-
-@media screen and (min-width: 410px){
-  .vidCard{
-    height: 20em;
-  }
-}
-@media screen and (min-width: 550px){
-  .vidCard{
-    height: 29em;
-  }
-}
-@media screen and (min-width: 640px){
-  .vidCard{
-    height: 31em;
-  }
-
-}
-@media screen and (min-width: 777px){
-  .vidCard{
-    height: 35em;
-  }
-}
-@media screen and (min-width: 950px){
-  .vidCard{
-    height: 40em;
-  }
-}
-@media screen and (min-width: 1010px){
-  .vidCard{
-    height: 50em;
-    padding: 1em 2em 0 2em;
-  }
-}
+/* I achieved responsive design by losing the height attribute above */
 .noUL {
   border-bottom: solid 0px;
 

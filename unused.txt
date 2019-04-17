@@ -1,0 +1,12 @@
+/*Vidcard media queries*/
+@media screen and (max-width:396px){
+  .vidCard{
+    height: 21em;
+  }
+}
+@media screen and (max-width:400px){
+  .vidCard{
+    height: 25em;
+  }
+}
+/* End vidCard media queries */
