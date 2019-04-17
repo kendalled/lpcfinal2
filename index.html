@@ -170,7 +170,36 @@
 				<header class="major special">
 					<h2>About Us</h2>
 					<p>Watch this short video to see our design process & products.</p>
+					<ul class="actions" style="justify-content: center;">
+					<li><a href="#button" class="button large wide icon fa-youtube-play bounce" id="button">Watch Video</a></li>
+				</ul>
 				</header>
+
+				<div class="vidCard" id="vidCard">
+					<h3 style="color: #000;">We Proudly Have 20+ Years of Design Experience.<br/></h3>
+
+					<div class="iframe-container">
+						<div id="iframeHolder">
+							<!-- Holds placeholder iframe while ajax load -->
+
+						</div>
+
+					</div>
+					<br/>
+					<a href="quote.html" title="Links to quote form." class="buttony fullWidth alternateColor2 scrolly"><span>Free Quote</span></a>
+
+				</div>
+
+				<!-- Testimonials
+				<div class="testimonial">
+					<h2 style="text-align: center;">Testimonials & Past Work</h2>
+
+					<blockquote><b style="color: #fff;">Lapel Pins & Coins has helped me design a wonderful pin. Their artists are incredibly talented - as I just had a rough idea of what I wanted. I'll be back soon! <br /><br />~ Eleanor M.</b></blockquote>
+					<ul class="actions special">
+						<li><a href="shipping.html" class="button scrolly primary fit ">Read More</a></li>
+					</ul>
+				</div>
+				Start -->
 
 			</div>
 		</section>
@@ -183,9 +212,7 @@
 					<p>Praesent dapibus neque id cursus faucibus consequat<br />
 						magna consequat erat ipsum lorem</p>
 				</header>
-				<ul class="actions special">
-					<li><a href="#" class="button primary wide">Get Started</a></li>
-				</ul>
+
 			</div>
 		</section>
 
@@ -216,6 +243,17 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
+	<script>
+		$(function() {
+			$('#button').click(function() {
+				if (!$('#iframe').length) {
+					$('#iframeHolder').html('<iframe title="About Video" width="640" height="360" src="https://www.youtube.com/embed/GwDGLVv2WB4" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>');
+					// Makes #vidCard Visible, display:none by default
+					document.getElementById('vidCard').style.display = "block";
+				}
+			});
+		});
+	</script>
 
 </body>
 
