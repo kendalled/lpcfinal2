@@ -90,8 +90,9 @@ ol, ul {
   background-color: #ff9e18;
 }
 .noUL {
+  color: #002d5d;
   border-bottom: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .customer-logo-link {
