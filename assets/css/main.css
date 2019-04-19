@@ -2613,7 +2613,7 @@ input, select, textarea {
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #ffa72f;
+		background-color: #002d5d;
 		background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #2C7ECB 90%);
 		background-size: auto, auto;
 		background-repeat: repeat, no-repeat;
