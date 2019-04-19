@@ -648,7 +648,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px;
+		border-bottom: solid 2px;
 		margin: 2rem 0;
 	}
 
@@ -690,6 +690,10 @@ input, select, textarea {
 	header.special {
 		text-align: center;
 	}
+
+  h3.special {
+    text-align: center;
+  }
 
 		header.special.major h1:after, header.special.major h2:after, header.special.major h3:after, header.special.major h4:after, header.special.major h5:after, header.special.major h6:after {
 			margin: 0 auto;
@@ -754,12 +758,13 @@ input, select, textarea {
 	}
 
 	hr {
-		border-bottom-color: rgba(0, 0, 0, 0.125);
+		border-bottom-color: #002d5d;
 	}
+
 
 	header.major h1:after, header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
 		background-color: #002d5d;
-		background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #ff9e18 90%);
+		background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #2C7ECB 90%);
 		background-size: auto, auto;
 		background-repeat: repeat, no-repeat;
 	}
@@ -2771,7 +2776,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 25%;
 		}
 
 			.image.left img, .image.right img {
@@ -3786,7 +3791,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		background-attachment: fixed, fixed;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../../images/headerTop.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../../images/headerTop.jpg");
 		background-position: center, center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
