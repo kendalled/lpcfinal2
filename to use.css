@@ -1,9 +1,0 @@
-.pricing-grid1:hover,.pricing-grid2:hover,.pricing-grid3:hover {
-	transform: scale(1.05);
--webkit-transform: scale(1.05);
--moz-transform: scale(1.05);
--o-transform: scale(1.05);
--ms-transform: scale(1.05);
-	z-index: 1;
-	border: none;
-}
