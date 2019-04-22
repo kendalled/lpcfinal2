@@ -631,7 +631,7 @@ body.is-preload *:after {
 html {
 	font-size: 14pt;
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1680px) {
 	html {
 		font-size: 12pt;
 	}
