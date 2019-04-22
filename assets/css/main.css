@@ -115,10 +115,14 @@ ul {
 	list-style: none;
 }
 /*Kendall*/
-.kenImg {
-  margin-top: 23rem;
+#specRow {
+  padding-left: 12%;
 }
-
+.selecty:hover {
+  background-color: #002d5d;
+  transition: .3s all;
+  color: white;
+}
 ul.check {
 	list-style: none;
 	padding-left: 0;
@@ -140,7 +144,7 @@ ul.check li:before {
 	color: #00b47b;
 	content: '\f00c';
 	display: block;
-	font-size: 2em;
+	font-size: 2.2em;
 	left: 0;
 	position: absolute;
 }
@@ -149,6 +153,7 @@ ul.check li:last-child {
 }
 ul.check li > div {
 	padding-top: 1em;
+  font-size: 1.1rem;
 }
 ul.centered {
 	justify-content: center;
@@ -2480,10 +2485,11 @@ a.icon.alt:active:before {
 	top: 0.25rem;
 
 }
-@media screen and (min-width: 505px){
+@media screen and (min-width: 580px){
   .image.left{
     max-width: 15em;
     height: auto;
+    margin-top: -6em;
   }
   .image.right{
     max-width: 15em;
