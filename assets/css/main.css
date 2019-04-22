@@ -115,6 +115,9 @@ ul {
 	list-style: none;
 }
 /*Kendall*/
+.kenImg {
+  margin-top: 23rem;
+}
 
 ul.check {
 	list-style: none;
@@ -2475,11 +2478,23 @@ a.icon.alt:active:before {
 	float: left;
 	margin: 0 1rem 1rem 0;
 	top: 0.25rem;
+
+}
+@media screen and (min-width: 505px){
+  .image.left{
+    max-width: 15em;
+    height: auto;
+  }
+  .image.right{
+    max-width: 15em;
+    height: auto;
+  }
 }
 .image.right {
 	float: right;
 	margin: 0 0 1rem 1rem;
 	top: 0.25rem;
+
 }
 .image.fit {
 	display: block;
