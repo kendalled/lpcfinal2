@@ -2028,21 +2028,23 @@ header.major h6:after {
 	color: #1f1f1f;
 	transition: .3s all;
 }
-.box:hover .kendallPic2{
-		transform: scale(1.1);
-		-webkit-transform: scale(1.1);
-		-moz-transform: scale(1.1);
-		-o-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		z-index: 1;
-}
-.box:hover .kendallPic{
-		transform: scale(1.1);
-		-webkit-transform: scale(1.1);
-		-moz-transform: scale(1.1);
-		-o-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		z-index: 1;
+@media screen and (min-width: 500px){
+	.box:hover .kendallPic2{
+			transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			z-index: 1;
+	}
+	.box:hover .kendallPic{
+			transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			z-index: 1;
+	}
 }
 
 .box >:last-child {
