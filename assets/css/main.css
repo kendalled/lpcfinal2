@@ -3143,7 +3143,7 @@ table.alt tbody tr td {
 .spotlights section:first-child {
 	margin-top: 0;
 }
-.spotlights section:nth-child(2n) {
+.spotlights section:nth-child(4n) {
 	-moz-flex-direction: row-reverse;
 	-webkit-flex-direction: row-reverse;
 	-ms-flex-direction: row-reverse;
