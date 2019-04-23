@@ -242,7 +242,7 @@ ul.centered {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #fff;
-	background: #002d5d;
+	background: #ff9e18;
 	text-decoration: none;
 	transition: all 0.2s ease;
 	position: absolute;
@@ -272,7 +272,7 @@ ul.centered {
 	vertical-align: middle;
 }
 .testimonial {
-	background-color: #737373;
+	background-color: #002d5d;
 	max-width: 100%;
 	height: 40%;
 	border-radius: 6px;
@@ -281,6 +281,10 @@ ul.centered {
 }
 .testimonial > h2 {
 	text-align: center;
+}
+
+.testimonial blockquote b{
+	color: #f1f1f1;
 }
 .vidCard {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -382,12 +386,12 @@ ul.centered {
 	height: auto;
 }
 .kendallPic {
-	max-width: 20em;
+	max-width: 19em;
 	height: auto;
 	margin: 0 1rem 0 1rem;
 }
 .kendallPic2 {
-	max-width: 16em;
+	max-width: 15em;
 	height: auto;
 	margin: 0 3.5rem 2rem 2.5rem;
 }
@@ -831,6 +835,7 @@ header.special.major h5:after,
 header.special.major h6:after {
 	margin: 0 auto;
 }
+
 @media screen and (max-width: 1280px) {
 	header.major p {
 		margin: 0 0 4rem 0;
@@ -893,6 +898,12 @@ header.major h6:after {
 	background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(245, 74, 111, 0), #2C7ECB 90%);
 	background-size: auto, auto;
 	background-repeat: repeat, no-repeat;
+}
+
+.style2 header.major h2:after {
+	background-color: #f1f1f1;
+	background-image: url("../../images/overlay.png"), linear-gradient(90deg, #f1f1f1, #f1f1f1 90%);
+
 }
 /* Row */
 
@@ -2007,12 +2018,14 @@ header.major h6:after {
 /* Box */
 
 .box {
-	border: solid 2px;
+	border: solid 1.5px;
 	border-radius: 6px;
 	margin-bottom: 2rem;
 	padding: 1.5rem;
 	border-color: #002d5d;
 	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+	background-color: #f1f1f1;
+	color: #1f1f1f;
 }
 .box >:last-child {
 	margin-bottom: 0;
@@ -2810,7 +2823,6 @@ table.alt tbody tr td {
 }
 .wrapper.style2 h1,
 .wrapper.style2 h2,
-.wrapper.style2 h3,
 .wrapper.style2 h4,
 .wrapper.style2 h5,
 .wrapper.style2 h6 {
@@ -2827,15 +2839,17 @@ table.alt tbody tr td {
 	border-bottom-color: #ffffff;
 }
 .wrapper.style2 header.major h1:after,
-.wrapper.style2 header.major h2:after,
 .wrapper.style2 header.major h3:after,
 .wrapper.style2 header.major h4:after,
 .wrapper.style2 header.major h5:after,
 .wrapper.style2 header.major h6:after {
-	background: #ffffff;
+	color: #002d5d;
+	background-color: linear-gradient(45deg, rgba(245, 74, 111, 0), #2C7ECB 90%);
+	/*yeet*/
 }
+
 .wrapper.style2 .box {
-	border-color: #ffffff;
+	border-color: #f1f1f1;
 }
 .wrapper.style2 input[type="submit"],
 .wrapper.style2 input[type="reset"],
@@ -3079,6 +3093,7 @@ table.alt tbody tr td {
 	display: -ms-flex;
 	display: flex;
 	margin-top: -3rem;
+	text-align: center;
 }
 .spotlights section .image {
 	-moz-flex-grow: 0;
@@ -3092,7 +3107,7 @@ table.alt tbody tr td {
 	border-radius: 100%;
 	box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.25);
 	margin: 0 6rem 0 0;
-	max-width: 20em;
+	max-width: 21em;
 	height: auto;
 }
 .spotlights section .image img {
@@ -3121,15 +3136,12 @@ table.alt tbody tr td {
 	-webkit-flex-direction: row-reverse;
 	-ms-flex-direction: row-reverse;
 	flex-direction: row-reverse;
-	text-align: right;
+	text-align: center;
 }
 .spotlights section:nth-child(2n) .image {
 	margin: 0 0 0 6rem;
 }
-.spotlights section:nth-child(2n) .content header.major h3:after {
-	margin-left: auto;
-	margin-right: 0;
-}
+
 @media screen and (max-width: 1280px) {
 	.spotlights section {
 		margin-top: 3rem;
