@@ -115,9 +115,7 @@ ul {
 	list-style: none;
 }
 /*Kendall*/
-#specRow {
-  padding-left: 12%;
-}
+
 .selecty:hover {
   background-color: #002d5d;
   transition: .3s all;
