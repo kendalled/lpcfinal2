@@ -2143,7 +2143,7 @@ input[type="button"],
 button,
 .button {
 	background-color: #002d5d;
-	color: #f1f1f1 !important;
+	color: #fff !important;
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover,
