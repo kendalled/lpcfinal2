@@ -2019,7 +2019,6 @@ header.major h6:after {
 /* Box */
 
 .box {
-	border: solid 2px #ff9e18;
 	border-radius: 6px;
 	margin-bottom: 2rem;
 	padding: 1.5rem;
