@@ -292,8 +292,8 @@ ul.centered {
 	background-color: #f1f1f1;
 	margin: 0 auto;
 	text-align: center;
-	max-width: 100%;
-	padding: 1.5em;
+	max-width: 50em;
+	padding: 2em;
 	display: none;
 }
 /* I achieved responsive design by losing the height attribute above */
@@ -2123,16 +2123,15 @@ input[type="reset"],
 input[type="button"],
 button,
 .button {
-	background-color: #f1f1f1;
-	box-shadow: inset 0 0 0 1px #000000;
-	color: #000000 !important;
+	background-color: #002d5d;
+	color: #f1f1f1 !important;
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-	color: #ff9e18 !important;
+	background-color: #ff9e18;
 }
 input[type="submit"]:hover:active,
 input[type="reset"]:hover:active,
