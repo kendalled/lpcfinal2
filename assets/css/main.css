@@ -164,10 +164,10 @@ ul.centered {
 	border-radius: 6px;
 	background-color: #f1f1f1;
 	color: #000;
-	max-width: 40em;
+	max-width: 25em;
 	padding: 0em 1em 1em 1em;
 	margin: 0em 1em 2em 1em;
-	max-height: 22em;
+	height: auto;
 }
 .cardy img {
 	max-width: 7em;
