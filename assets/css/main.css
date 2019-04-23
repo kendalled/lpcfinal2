@@ -880,7 +880,8 @@ h6 {
 	color: #000000;
 }
 blockquote {
-	border-left-color: rgba(0, 0, 0, 0.125);
+	border-left-color: #ff9e18;
+	text-align: center;
 }
 code {
 	background: rgba(0, 0, 0, 0.05);
