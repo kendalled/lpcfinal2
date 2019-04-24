@@ -2597,6 +2597,10 @@ a.icon.alt:active:before {
 	.quoteHeader{
 		padding: 2em 1.5em 1em 1.5em;
 	}
+
+	#quoteForm {
+		padding: 2em 2em 1em 2em;
+	}
 }
 /* List */
 
