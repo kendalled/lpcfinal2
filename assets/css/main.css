@@ -115,14 +115,18 @@ ul {
 	list-style: none;
 }
 /*Kendall*/
+.quoteH1{
+	text-align: center;
+	font-size: 2rem;
+}
 #quoteForm {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   border-radius: 6px;
   background-color: #f7f7f7;
-  padding: 3em;
+  padding: 2em 3em 1em 3em;
   max-width: 60em;
   height: auto;
-	margin: -8rem auto;
+	margin: -5rem auto;
 	color: #1f1f1f;
 }
 #quoteImg {
@@ -137,7 +141,7 @@ ul {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   border-radius: 6px;
   background-color: #f7f7f7;
-  padding: 3em;
+  padding: 2em 3em 1em 3em;
   max-width: 70rem;
   height: auto;
 	margin: 10rem auto;
@@ -2588,6 +2592,7 @@ a.icon.alt:active:before {
 @media screen and (max-width: 736px) {
 	.image.main {
 		margin: 0 0 2rem 0;
+		padding: 2em 2em 1em 2em;
 	}
 }
 /* List */
