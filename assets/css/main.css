@@ -2592,7 +2592,10 @@ a.icon.alt:active:before {
 @media screen and (max-width: 736px) {
 	.image.main {
 		margin: 0 0 2rem 0;
-		padding: 2em 2em 1em 2em;
+	}
+
+	.quoteHeader{
+		padding: 2em 1.5em 1em 1.5em;
 	}
 }
 /* List */
