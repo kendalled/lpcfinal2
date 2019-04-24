@@ -2465,8 +2465,8 @@ input[type="radio"]:focus + label:before {
 	font-size: 1.5rem;
 }
 a.icon.alt2:hover:before {
-	color: #f1f1f1;
-	background-color: #002d5d;
+	color: #ff9e18;
+
 }
 .icon.alt2:before {
 	border-radius: 100%;
@@ -2475,18 +2475,11 @@ a.icon.alt2:hover:before {
 	width: 4rem;
 	height: 4rem;
 	line-height: 4rem;
-	background-color: #ff9e18;
-	color: #fff;
+	background-color: #fff;
+	color: #002d5d;
 }
-a.icon.alt2:active:before {
-	background-color: rgba(0, 0, 0, 0.175);
-}
-a.icon.alt2:before {
-	-moz-transition: background-color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out;
-}
+
+
 /* End custom icons */
 
 .icon.major {
