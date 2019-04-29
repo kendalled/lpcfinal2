@@ -133,22 +133,23 @@
 					</div>
 					<!-- end codepen -->
 					<!-- start video section -->
-					<ul class="actions" style="justify-content: center;">
-						<li><a href="#button" class="button large wide icon fa-youtube-play bounce" id="button">Watch Video</a></li>
-					</ul>
 					<div class="vidCard" id="vidCard">
-						<h3 style="color: #1f1f1f;">Our experts save you time & money.<br /></h3>
+						<h3 style="color: #1f1f1f;">Our experts make the difference.<br /></h3>
 
 						<div class="iframe-container">
 							<div id="iframeHolder">
-								<!-- Holds placeholder iframe while ajax load -->
+								<iframe title="About Video" width="640" height="360" src="https://www.youtube.com/embed/GwDGLVv2WB4" class="lazyload" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
 							</div>
 
 						</div>
 						<br />
 						<a href="quote.html" title="Links to quote form." class="buttony fullWidth alternateColor1 scrolly"><span>Get a Free Quote</span></a>
+						<a href="#target" title="Links to quote form." class="buttony fullWidth alternateColor2 scrolly"><span>Learn More</span></a>
 
 					</div>
+					<br/>
+					<br/>
+
 					<!-- end video section -->
 				</header>
 
@@ -156,10 +157,10 @@
 		</section>
 
 		<!-- Section -->
-		<section class="wrapper style2 alt">
+		<section class="wrapper style2 alt" id="target">
 			<div class="inner">
 				<header class="major special">
-					<h2>Our Catalog</h2>
+					<h2>Our Products</h2>
 				</header>
 				<div class="spotlights">
 
@@ -230,6 +231,7 @@
 					<p>We have designed lapel pins, challenge coins, and more since the early 70’s, giving us the experience to produce any design.</p>
 
 				</header>
+
 				<div class="testimonial">
 					<blockquote><b>" Lapel Pins & Coins has helped me design a wonderful pin. I'll be back soon! "<br />~ Eleanor M. (Queens, NY)</b></blockquote>
 					<div id="customer-logos">
@@ -281,7 +283,8 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
-	<script>
+
+	<!--	<script>
 		$(function() {
 			$('#button').click(function() {
 				if (!$('#iframe').length) {
@@ -292,7 +295,7 @@
 				}
 			});
 		});
-	</script>
+	</script>-->
 
 </body>
 
