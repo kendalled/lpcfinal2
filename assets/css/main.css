@@ -329,7 +329,7 @@ ul.centered {
 	background-color: #fff;
 	margin: 0 auto;
 	text-align: center;
-	max-width: 25em;
+	max-width: 23em;
 	padding: 2em 2em 3em 2em;
 }
 /* I achieved responsive design by losing the height attribute above */
