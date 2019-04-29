@@ -314,7 +314,7 @@ ul.centered {
 	max-width: 100%;
 
 	border-radius: 6px;
-	padding: 3em;
+	padding: 1.2em;
 	margin: 2rem auto;
 }
 .testimonial > h3 {
@@ -325,13 +325,16 @@ ul.centered {
 	color: #fff;
 }
 .vidCard {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18), 0 1px 2px rgba(0, 0, 0, 0.2);
 	border-radius: 6px;
-	background-color: #fff;
+	background-color: transparent;
 	margin: 0 auto;
 	text-align: center;
-	max-width: 23em;
-	padding: 2em 2em 3em 2em;
+	max-width: 60%;
+	padding: 0 0 2em 0;
+}
+.testimonial h3 {
+	text-align: center;
+	color: #f1f1f1;
 }
 /* I achieved responsive design by losing the height attribute above */
 
@@ -343,7 +346,7 @@ ul.centered {
 	-webkit-transform-origin: 0px 0px;
 	transform-origin: 0px 0px 0px;
 	border-radius: 6px;
-	
+
 
 }
 .iframe-container iframe {
@@ -355,9 +358,7 @@ ul.centered {
 	width: 100%;
 
 }
-#iframeHolder {
-	text-align: center;
-}
+
 /* Bounce Animation */
 @-moz-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {
