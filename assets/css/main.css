@@ -2555,12 +2555,12 @@ a.icon.alt:active:before {
 }
 @media screen and (min-width: 580px){
   .image.left{
-    max-width: 19em;
+    max-width: 16em;
     height: auto;
-    margin-top: -6.5em;
+    margin-top: -7.5em;
   }
   .image.right{
-    max-width: 15em;
+    max-width: 20em;
     height: auto;
   }
 }
