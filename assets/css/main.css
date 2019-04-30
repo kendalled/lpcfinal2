@@ -3554,12 +3554,18 @@ table.alt tbody tr td {
 	justify-content: center;
 	background-attachment: fixed, fixed;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../../images/headerTop.jpg");
-	background-position: center, center;
+	background-position: left, top;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, cover;
 	min-height: calc(75vh + 7rem);
 	position: relative;
 	text-align: center;
+}
+
+@media screen and (max-width: 1920px){
+	#banner {
+		background-size: auto, contain;
+	}
 }
 
 #banner input[type="submit"],
