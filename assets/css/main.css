@@ -309,13 +309,16 @@ ul.centered {
 	vertical-align: middle;
 }
 .testimonial {
-
 	background-color: #002d5d;
 	max-width: 100%;
-
 	border-radius: 6px;
-	padding: 1.2em;
+	padding: 2em;
 	margin: 2rem auto;
+}
+@media screen and (max-width: 720px){
+	.testimonial {
+		padding: 1.2em;
+	}
 }
 .testimonial > h3 {
 	text-align: center;
@@ -440,7 +443,7 @@ ul.centered {
 #bannerLogo {
 	background-color: #ffffff;
 	border-radius: 6px;
-	max-width: 50em;
+	max-width: 90em;
 	height: auto;
 	padding: 2em 1.5em 1em 1.5em;
 	margin: 0 auto;
@@ -477,7 +480,7 @@ ul.centered {
 /* Base buttony Styles */
 
 .buttony {
-	border-radius: 15px;
+	border-radius: 12px;
 	cursor: pointer;
 	display: inline-block;
 	line-height: 1.75;
@@ -487,7 +490,6 @@ ul.centered {
 	position: relative;
 	z-index: 1;
 	border-bottom: none;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 .buttony span {
 	color: #fff;
@@ -503,7 +505,7 @@ ul.centered {
 	user-select: none;
 }
 .alternateColor2 span {
-	color: #1f1f1f;
+	color: #fff;
 }
 .alternateColor1 span {
 	color: #1f1f1f;
@@ -532,7 +534,7 @@ ul.centered {
 .buttony:hover {
 	color: #fff;
 	/* Optional Box Shadow */
-	box-shadow: none;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 .buttony:hover span {
 	color: #fff;
@@ -573,30 +575,30 @@ ul.centered {
 /* Orange Coloring */
 
 .buttony.alternateColor1 {
-	background: #ff9e17;
+	background: #f3a543;
 }
 .buttony.alternateColor1:before {
-	background: #F57C00;
+	background: #ff9e18;
 }
 .buttony.alternateColor1:hover {
-	background: #FB8C00;
+	background: #df983f;
 }
 .buttony.alternateColor1:hover:before {
 	background: #EF6C00;
 }
-/* Orange Coloring */
+/* blue Coloring */
 
 .buttony.alternateColor2 {
-	background: #c1bfbf;
+	background: #002d5d;
 }
 .buttony.alternateColor2:before {
-	background: #424242;
+	background: #1ea5ff;
 }
 .buttony.alternateColor2:hover {
-	background: #9E9E9E;
+	background: #3C6682;
 }
 .buttony.alternateColor2:hover:before {
-	background: #002d5d;
+	background: #1ea5ff;
 }
 /*BUTTONS*/
 
