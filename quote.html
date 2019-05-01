@@ -69,14 +69,12 @@
 
 		<!-- Section -->
 		<section class="wrapper style3 alt">
+
 			<div class="inner">
-
-
-
 				<div id="quoteForm">
 					<!-- Form -->
 					<header class="major special">
-						<h1 class="quoteH1">Free Quote Request</h1>
+						<h1 class="quoteH1">Contact Info</h1>
 					</header>
 					<form name="Free Quote Request" data-netlify="true" method="post" action="#" class="alt">
 						<div class="row gtr-uniform">
@@ -97,39 +95,52 @@
 								<input type="text" name="Phone" id="demo-phone" value="" placeholder="Phone Number" required>
 							</div>
 
-							<!-- Break -->
-							<div class="col-10">
-								<select name="Product Type" id="demo-category">
-									<option value="">- Product -</option>
-									<option value="Lapel Pins">Lapel Pins</option>
-									<option value="Challenge Coins">Challenge Coins</option>
-									<option value="Keychains">Keychains</option>
-								</select>
-							</div>
-							<!-- Break -->
+							<header class="major special">
+								<h1 class="quoteH1">Order Details</h1>
+							</header>
+
 							<div class="col-4 col-12-small">
 								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-								<label for="demo-priority-low">Quote & Free Art Proof</label>
+								<label for="demo-priority-low">Lapel Pins</label>
 							</div>
 							<div class="col-4 col-12-small">
 								<input type="radio" id="demo-priority-normal" name="demo-priority">
-								<label for="demo-priority-normal">Quote Only</label>
+								<label for="demo-priority-normal">Challenge Coins</label>
+							</div>
+							<div class="col-4 col-12-small">
+								<input type="radio" id="demo-priority-normal" name="demo-priority">
+								<label for="demo-priority-normal">Keychains</label>
+							</div>
+							<div class="col-6">
+								<select name="Quantity" id="demo-category">
+									<option value="">- Quantity -</option>
+									<option value="100-199">100-199</option>
+									<option value="200-299">200-299</option>
+									<option value="300+">300+</option>
+								</select>
 							</div>
 
-							<!--
-						<div class="col-6 col-12-small">
-							<input type="checkbox" id="demo-human" name="demo-human" checked>
-							<label for="demo-human">I am a human</label>
-						</div>
-					-->
+							<div class="col-6">
+								<select name="Color" id="demo-category">
+									<option value="">- Color -</option>
+									<option value="Single">One Side</option>
+									<option value="Double">Both Sides</option>
+									<option value="No Color">Colorless</option>
+								</select>
+							</div>
+
+							<header class="major special">
+								<h1 class="quoteH1">Make it Yours</h1>
+							</header>
 							<!-- Break -->
 							<div class="col-12 col-12-xsmall">
-								<input type="text" name="Design Notes" id="demo-Lname" value="" placeholder="Design Notes: (Optional)">
+								<textarea name="Design Notes" id="demo-message" placeholder="Enter your design notes." rows="4"></textarea>
 							</div>
 
-							<div class="col-12 col-12-xsmall file-input-wrapper">
-								<label for="upload-file" class="file-input-button icon fa-upload"> Reference Image</label>
+							<div class="col-12 col-12-xsmall file-input-wrapper" id="file-input">
+								<label for="upload-file" class="file-input-button icon fa-upload"> Upload Image</label>
 								<input id="upload-file" type="file" name="image" />
+								<label for="upload-file" data-js-label style="margin-left: .5em;">No File Selected</label>
 							</div>
 
 
@@ -294,7 +305,7 @@
 
 					var value = fileInput.value.replace(/^.*[\\\/]/, '')
 					el.className += ' -chosen'
-					label.innerText = value
+					label.innerText = " ✅ " + value
 				}
 		}
 	</script>

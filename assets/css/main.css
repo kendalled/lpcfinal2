@@ -117,7 +117,8 @@ ul {
 /*Kendall*/
 .quoteH1{
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
+	width: 55vw;
 }
 #quoteForm {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -340,7 +341,16 @@ ul.centered {
 	color: #f1f1f1;
 }
 /* I achieved responsive design by losing the height attribute above */
+.container {
+    overflow:auto;
+		margin: 0 auto;
+}
+.container .product {
+    float:left;
 
+    border-style:solid;
+    margin:1em;
+}
 .iframe-container {
 	margin: 0 auto 0 auto;
 	overflow: hidden;
@@ -607,28 +617,30 @@ ul.centered {
 }
  .file-input-wrapper .file-input-button {
 	 color: white;
-	 border: 1px solid #222;
-	 background: #222;
+	 line-height: 1.2;
+	 border-radius: 12px;
+	 padding: 1em .5em 1.5em 1em;
+	 background: #ff9e18;
 	 box-sizing: border-box;
 	 font-family: sans-serif;
-	 width: 140px;
-	 height: 3.5em;
+	 width: 12em;
+	 height: 3em;
 	 display: inline;
 	 display: inline-block;
 	 font-size: 15px;
 	 font-weight: 400;
-	 margin-top: 20px;
-	 padding-top: 9px;
+	 margin-left: .25em;
 	 text-align: center;
 	 transition: color 500ms, background-color 500ms;
 	 -moz-transition: color 500ms, background-color 500ms;
 	 -webkit-transition: color 500ms, background-color 500ms;
 	 -o-transition: color 500ms, background-color 500ms;
 	 -ie-transition: color 500ms, background-color 500ms;
+	 cursor: pointer;
 }
  .file-input-wrapper .file-input-button:hover {
 	 color: #000000;
-	 background: rgba(68,68,68,0.2);
+	 background: #ccc;
 	 text-decoration: none;
 }
  .file-input-wrapper input {
@@ -637,7 +649,7 @@ ul.centered {
 
 /* styles */
 .product {
-  max-width: 50ch;
+  max-width: 28ch;
   padding: 2em;
   border-radius: 6px;
   margin: auto;
@@ -680,7 +692,7 @@ ul.centered {
   padding: 0.5em;
   background-color: mediumspringgreen;
   font-weight: 700;
-  font-size: 1.4em;
+  font-size: 1em;
   color: white;
   transition: opacity .1s ease-in-out;
 	border-radius: 12px;
@@ -703,14 +715,19 @@ ul.centered {
 }
 /* img */
 .product img {
-  max-width: 15em;
+  max-width: 10em;
   height: auto;
   border: none;
   vertical-align: middle;
   font-style: italic;
 	margin-bottom: 1rem;
 }
-
+.product-heading {
+	font-size: 1.5rem;
+}
+.product-price {
+	font-size: 1.2rem;
+}
 /* End Kendall */
 
 blockquote,
@@ -2354,7 +2371,7 @@ textarea {
 	border-radius: 6px;
 	border: none;
 	border: solid 1px;
-	color: inherit;
+	color: #444;
 	display: block;
 	outline: 0;
 	padding: 0 1.25rem;
@@ -2525,16 +2542,16 @@ input[type="radio"]:focus + label:before {
 	box-shadow: 0 0 0 1px #002d5d;
 }
 ::-webkit-input-placeholder {
-	color: #000000 !important;
+	color: #444 !important;
 }
 :-moz-placeholder {
-	color: #000000 !important;
+	color: #444 !important;
 }
 ::-moz-placeholder {
-	color: #000000 !important;
+	color: #444 !important;
 }
 :-ms-input-placeholder {
-	color: #000000 !important;
+	color: #444 !important;
 }
 /* Icon */
 
@@ -3562,12 +3579,6 @@ table.alt tbody tr td {
 	text-align: center;
 }
 
-@media screen and (max-width: 1920px){
-	#banner {
-		background-size: auto, contain;
-	}
-}
-
 #banner input[type="submit"],
 #banner input[type="reset"],
 #banner input[type="button"],
@@ -3670,8 +3681,17 @@ table.alt tbody tr td {
 @media screen and (max-width: 1280px) {
 	#banner {
 		padding-bottom: 5.25rem;
+		background-size: auto, cover;
+	}
+	#banner2 {
+		padding-bottom: 5.25rem;
+		background-size: auto, cover !important;
 	}
 	#banner:after {
+		background-size: 125% 100%;
+		height: 6rem;
+	}
+	#banner2:after {
 		background-size: 125% 100%;
 		height: 6rem;
 	}
@@ -3681,6 +3701,13 @@ table.alt tbody tr td {
 		padding-bottom: 3.25rem;
 	}
 	#banner:after {
+		background-size: 125% 100%;
+		height: 4rem;
+	}
+	#banner2 {
+		padding-bottom: 3.25rem;
+	}
+	#banner2:after {
 		background-size: 125% 100%;
 		height: 4rem;
 	}
@@ -3748,6 +3775,216 @@ body.is-preload #banner > .content {
 		display: none;
 	}
 }
+/* Banner2 */
+
+#banner2 {
+	background-color: #3a3a3a;
+	color: #ffffff;
+	padding-bottom: 7.25rem;
+	padding: 10rem 0 8rem 0;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-attachment: fixed, fixed;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../../images/headerTop.jpg");
+	background-position: left, top;
+	background-repeat: repeat, no-repeat;
+	background-size: auto, contain;
+	min-height: calc(15vh + 7rem);
+	position: relative;
+	text-align: center;
+}
+
+#banner2 input[type="submit"],
+#banner2 input[type="reset"],
+#banner2 input[type="button"],
+#banner2 button,
+#banner2 .button {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 2px #002d5d;
+	color: #002d5d !important;
+}
+#banner2 input[type="submit"]:hover,
+#banner2 input[type="reset"]:hover,
+#banner2 input[type="button"]:hover,
+#banner2 button:hover,
+#banner2 .button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+#banner2 input[type="submit"]:hover:active,
+#banner2 input[type="reset"]:hover:active,
+#banner2 input[type="button"]:hover:active,
+#banner2 button:hover:active,
+#banner2 .button:hover:active {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+#banner2 input[type="submit"].primary,
+#banner2 input[type="reset"].primary,
+#banner2 input[type="button"].primary,
+#banner2 button.primary,
+#banner2 .button.primary {
+	background-color: #002d5d;
+	background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(245, 74, 111, 0), #ff9e18 80%);
+	background-size: auto, auto;
+	background-repeat: repeat, no-repeat;
+	box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
+	color: #ffffff !important;
+}
+#banner2 input[type="submit"].primary:hover,
+#banner2 input[type="reset"].primary:hover,
+#banner2 input[type="button"].primary:hover,
+#banner2 button.primary:hover,
+#banner2 .button.primary:hover {
+	background-color: #f7718e;
+}
+#banner2 input[type="submit"].primary:hover:active,
+#banner2 input[type="reset"].primary:hover:active,
+#banner2 input[type="button"].primary:hover:active,
+#banner2 button.primary:hover:active,
+#banner2 .button.primary:hover:active {
+	background-color: #ed2954;
+}
+#banner2 input,
+#banner2 select,
+#banner2 textarea {
+	color: #ffffff;
+}
+#banner2 a {
+	color: #002d5d;
+}
+#banner2 strong,
+#banner2 b {
+	color: #ffffff;
+}
+#banner2 h1,
+#banner2 h2,
+#banner2 h3,
+#banner2 h4,
+#banner2 h5,
+#banner2 h6 {
+	color: #ffffff;
+}
+#banner2 blockquote {
+	border-left-color: #ffffff;
+}
+#banner2 code {
+	background: rgba(255, 255, 255, 0.05);
+	border-color: #ffffff;
+}
+#banner2 hr {
+	border-bottom-color: #ffffff;
+}
+#banner2 header.major h1:after,
+#banner2 header.major h2:after,
+#banner2 header.major h3:after,
+#banner2 header.major h4:after,
+#banner2 header.major h5:after,
+#banner2 header.major h6:after {
+	background: #ffffff;
+}
+#banner2:after {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1900' height='150' viewBox='0 0 1900 150' preserveAspectRatio='none'%3E%3Cpath d='M0,25.7C243.4,84,596.7,150,950,150c353.3,0,706.6-66,950-124.3V150H0V25.7z' fill='%23f1f1f1'/%3E%3C/svg%3E");
+	background-size: 100% 100%;
+	background-position: center;
+	bottom: -1px;
+	content: '';
+	height: 8rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	box-shadow: inset 0 -1px 0 0 #f1f1f1;
+}
+@media screen and (max-width: 1280px) {
+	#banner2 {
+		padding-bottom: 5.25rem;
+	}
+	#banner2:after {
+		background-size: 125% 100%;
+		height: 6rem;
+	}
+}
+@media screen and (max-width: 736px) {
+	#banner2 {
+		padding-bottom: 3.25rem;
+	}
+	#banner2:after {
+		background-size: 125% 100%;
+		height: 4rem;
+	}
+}
+#banner2:before {
+	pointer-events: none;
+	-moz-transition: opacity 1.5s ease-in-out 0.75s;
+	-webkit-transition: opacity 1.5s ease-in-out 0.75s;
+	-ms-transition: opacity 1.5s ease-in-out 0.75s;
+	transition: opacity 1.5s ease-in-out 0.75s;
+	background: #333333;
+	content: '';
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#banner2 > .content {
+	-moz-transition: -moz-transform 1s ease-in-out, opacity 1.25s ease-in-out;
+	-webkit-transition: -webkit-transform 1s ease-in-out, opacity 1.25s ease-in-out;
+	-ms-transition: -ms-transform 1s ease-in-out, opacity 1.25s ease-in-out;
+	transition: transform 1s ease-in-out, opacity 1.25s ease-in-out;
+	position: relative;
+	z-index: 1;
+}
+#banner2 > .content >:last-child {
+	margin-bottom: 0;
+}
+body.is-preload #banner2:before {
+	opacity: 1;
+}
+body.is-preload #banner2 > .content {
+	-moz-transform: translateY(0.75rem);
+	-webkit-transform: translateY(0.75rem);
+	-ms-transform: translateY(0.75rem);
+	transform: translateY(0.75rem);
+	opacity: 0;
+}
+@media screen and (max-width: 1280px) {
+	#banner2 {
+		padding: 7.5rem 0 5.5rem 0;
+		background-attachment: scroll, scroll;
+	}
+}
+@media screen and (max-width: 980px) {
+	#banner2 {
+		padding: 7.5rem 6rem 5.5rem 6rem;
+	}
+}
+@media screen and (max-width: 736px) {
+	#banner2 {
+		padding: 8rem 2rem 6rem 2rem;
+		min-height: 0;
+	}
+}
+@media screen and (max-width: 480px) {
+	#banner2 {
+		padding: 10rem 2rem 8rem 2rem;
+	}
+}
+@media screen and (max-width: 480px) {
+	#banner2 br {
+		display: none;
+	}
+}
+
 /* Header */
 
 @-moz-keyframes reveal-header {
