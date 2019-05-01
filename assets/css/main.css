@@ -117,8 +117,9 @@ ul {
 /*Kendall*/
 .quoteH1{
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	width: 55vw;
+	justify-content: center;
 }
 #quoteForm {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -3923,10 +3924,10 @@ body.is-preload #banner > .content {
 }
 #banner2:before {
 	pointer-events: none;
-	-moz-transition: opacity 1.5s ease-in-out 0.75s;
-	-webkit-transition: opacity 1.5s ease-in-out 0.75s;
-	-ms-transition: opacity 1.5s ease-in-out 0.75s;
-	transition: opacity 1.5s ease-in-out 0.75s;
+	-moz-transition: opacity .25s ease-in-out 0.25s;
+	-webkit-transition: opacity .25s ease-in-out 0.25s;
+	-ms-transition: opacity .25s ease-in-out 0.25s;
+	transition: opacity .25s ease-in-out 0.25s;
 	background: #333333;
 	content: '';
 	height: 100%;
